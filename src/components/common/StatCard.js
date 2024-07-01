@@ -6,9 +6,9 @@ export default function StatCard(props) {
   const cardStyle = {
     display: "flex",
     flex: 1,
-    marginRight: 20,
     justifyContent: "center",
     fontSize: 10,
+    width: "100%",
   };
   const iconWrapperStyle = {
     width: 45,

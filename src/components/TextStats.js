@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import StatCard from "./common/StatCard";
 
 import AbcIcon from "@mui/icons-material/Abc";
@@ -7,6 +7,8 @@ import EmojiSymbolsIcon from "@mui/icons-material/EmojiSymbols";
 import Filter3Icon from "@mui/icons-material/Filter3";
 
 export default function TextStats(props) {
+  const narrowWidth = useMediaQuery("(max-width:767px)");
+
   const renderStats = () => {
     return statsConfig(props.data).map((stat, index) => (
       <StatCard
@@ -26,6 +28,8 @@ export default function TextStats(props) {
         display: "flex",
         alignItems: "flex-start",
         justifyContent: "space-between",
+        flexDirection: narrowWidth ? "column" : "row",
+        gap: 2,
       }}
     >
       {renderStats()}
