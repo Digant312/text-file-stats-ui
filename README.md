@@ -10,6 +10,13 @@ This is an interview project application that enable user to upload a text file.
 - It does not have application level state management as of now.
 - It refers to local backend as of now. Next step would be to fetch this details from deployed version.
 
+- Application view on desktop.
+![Desktop view](https://tinyurl.com/2m49hak6)
+
+- Application view on mobile.
+![Mobile view](https://tinyurl.com/2hwcz5y3)
+  
+
 ## How to start
 
 - Clone this repo in local system.
