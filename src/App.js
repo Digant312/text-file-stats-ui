@@ -1,10 +1,17 @@
-function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import withLayout from "./components/hocs/Layout";
+import Stats from "./pages/Stats";
+import NotFound from "./pages/NotFound";
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>React</h1>
-      <h2>Start React</h2>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" default element={withLayout(Stats)} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
