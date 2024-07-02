@@ -37,7 +37,7 @@ export default function TextStats(props) {
   );
 }
 
-const statsConfig = (stats) => {
+export const statsConfig = (stats) => {
   return [
     {
       key: "wordCount",
